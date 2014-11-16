@@ -1,5 +1,15 @@
-#03_01_dice
+#03_02_dice
 import random
 for x in range(1, 11):
-    random_number = random.randint(1, 6)
-    print(random_number)
+    throw_1 = random.randint(1, 6)
+    throw_2 = random.randint(1, 6)
+    total = throw_1 + throw_2
+    print(total)
+    if total == 7:
+        print('Seven Thrown!')
+    if total == 11:
+        print('Eleven Thrown!')
+    if throw_1 == throw_2:
+        print('Double Thrown!')
+#    random_number = random.randint(1, 6)
+#    print(random_number)
